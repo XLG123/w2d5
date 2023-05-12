@@ -8,8 +8,8 @@ false
 false
 
 #initialize
-#<Item:0x00000001047d7a30 @title="Fix login page", @deadline="2019-10-25", @description="The page loads too slow.">
-#<Item:0x00000001047d7670 @title="Buy Cheese", @deadline="2019-10-21", @description="You require American, Swiss, Feta, and Mozzarella cheese for the Happy hour!">
+#<Item:0x0000000102273000 @title="Fix login page", @deadline="2019-10-25", @description="The page loads too slow.">
+#<Item:0x0000000102271048 @title="Buy Cheese", @deadline="2019-10-21", @description="You require American, Swiss, Feta, and Mozzarella cheese for the Happy hour!">
 
 Original Item 1:
 "Fix login page"
@@ -20,3 +20,219 @@ Modified Item 1:
 "Fix profile page"
 "2023-04-12"
 "The page loads too slow."
+
+true
+true
+false
+#<List:0x000000010226bee0 @label="List_1", @items=[#<Item:0x000000010226ba08 @title="Fix profile page", @deadline="2023-04-12", @description="The page loads too slow.">, #<Item:0x000000010226b530 @title="Buy Cheese", @deadline="2019-10-21", @description="You require American, Swiss, Feta, and Mozzarella cheese for the Happy hour!">]>
+
+List 1 has 2 items
+
+valid_index?
+false
+true
+false
+true
+
+swap
+true
+false
+
+List 1 after swapping item 1 and item 2:
+#<List:0x000000010226bee0 @label="List_1", @items=[#<Item:0x000000010226b530 @title="Buy Cheese", @deadline="2019-10-21", @description="You require American, Swiss, Feta, and Mozzarella cheese for the Happy hour!">, #<Item:0x000000010226ba08 @title="Fix profile page", @deadline="2023-04-12", @description="The page loads too slow.">]>
+
+List 1 with three items
+#<List:0x000000010226bee0 @label="List_1", @items=[#<Item:0x000000010226b530 @title="Buy Cheese", @deadline="2019-10-21", @description="You require American, Swiss, Feta, and Mozzarella cheese for the Happy hour!">, #<Item:0x000000010226ba08 @title="Fix profile page", @deadline="2023-04-12", @description="The page loads too slow.">, #<Item:0x000000010226a5b8 @title="item 3", @deadline="2023-02-12", @description=nil>]>
+
+#[](index)
+nil
+
+#<Item:0x000000010226ba08 @title="Fix profile page", @deadline="2023-04-12", @description="The page loads too slow.">
+
+#priority
+#<Item:0x000000010226b530 @title="Buy Cheese", @deadline="2019-10-21", @description="You require American, Swiss, Feta, and Mozzarella cheese for the Happy hour!">
+
+print
+--------------------------------------------
+				List 2		
+--------------------------------------------
+Index	| Item					| Deadline
+--------------------------------------------
+0		| item 1				| 2023-01-19
+1		| item 2				| 2023-02-19
+2		| item 3				| 2023-03-19
+--------------------------------------------
+
+
+print_full_item
+--------------------------------------------
+item 2 							 2023-02-19
+Notebook
+--------------------------------------------
+
+
+print_priority
+--------------------------------------------
+				PRIORITY		
+--------------------------------------------
+item 1 							 2023-01-19
+Pencil
+--------------------------------------------
+
+
+up
+move up item 2: true
+--------------------------------------------
+				List 2		
+--------------------------------------------
+Index	| Item					| Deadline
+--------------------------------------------
+0		| item 2				| 2023-02-19
+1		| item 1				| 2023-01-19
+2		| item 3				| 2023-03-19
+--------------------------------------------
+
+move up item 3: true
+--------------------------------------------
+				List 2		
+--------------------------------------------
+Index	| Item					| Deadline
+--------------------------------------------
+0		| item 2				| 2023-02-19
+1		| item 3				| 2023-03-19
+2		| item 1				| 2023-01-19
+--------------------------------------------
+
+move up item 1: true
+--------------------------------------------
+				List 2		
+--------------------------------------------
+Index	| Item					| Deadline
+--------------------------------------------
+0		| item 1				| 2023-01-19
+1		| item 2				| 2023-02-19
+2		| item 3				| 2023-03-19
+--------------------------------------------
+
+move up item 3: true
+--------------------------------------------
+				List 2		
+--------------------------------------------
+Index	| Item					| Deadline
+--------------------------------------------
+0		| item 3				| 2023-03-19
+1		| item 1				| 2023-01-19
+2		| item 2				| 2023-02-19
+--------------------------------------------
+
+move up item 4: false
+--------------------------------------------
+				List 2		
+--------------------------------------------
+Index	| Item					| Deadline
+--------------------------------------------
+0		| item 3				| 2023-03-19
+1		| item 1				| 2023-01-19
+2		| item 2				| 2023-02-19
+--------------------------------------------
+
+
+down
+move down item 1: true
+--------------------------------------------
+				List 2		
+--------------------------------------------
+Index	| Item					| Deadline
+--------------------------------------------
+0		| item 3				| 2023-03-19
+1		| item 2				| 2023-02-19
+2		| item 1				| 2023-01-19
+--------------------------------------------
+
+move down item 3: true
+--------------------------------------------
+				List 2		
+--------------------------------------------
+Index	| Item					| Deadline
+--------------------------------------------
+0		| item 2				| 2023-02-19
+1		| item 1				| 2023-01-19
+2		| item 3				| 2023-03-19
+--------------------------------------------
+
+move down item 2: true
+--------------------------------------------
+				List 2		
+--------------------------------------------
+Index	| Item					| Deadline
+--------------------------------------------
+0		| item 1				| 2023-01-19
+1		| item 3				| 2023-03-19
+2		| item 2				| 2023-02-19
+--------------------------------------------
+
+move down item 3: true
+--------------------------------------------
+				List 2		
+--------------------------------------------
+Index	| Item					| Deadline
+--------------------------------------------
+0		| item 1				| 2023-01-19
+1		| item 2				| 2023-02-19
+2		| item 3				| 2023-03-19
+--------------------------------------------
+
+move down item 1: true
+--------------------------------------------
+				List 2		
+--------------------------------------------
+Index	| Item					| Deadline
+--------------------------------------------
+0		| item 2				| 2023-02-19
+1		| item 3				| 2023-03-19
+2		| item 1				| 2023-01-19
+--------------------------------------------
+
+
+sort_by_date!
+--------------------------------------------
+				List 2		
+--------------------------------------------
+Index	| Item					| Deadline
+--------------------------------------------
+0		| item 1				| 2023-01-19
+1		| item 2				| 2023-02-19
+2		| item 3				| 2023-03-19
+--------------------------------------------
+
+Add more items:
+--------------------------------------------
+				List 2		
+--------------------------------------------
+Index	| Item					| Deadline
+--------------------------------------------
+0		| item 1				| 2023-01-19
+1		| item 2				| 2023-02-19
+2		| item 3				| 2023-03-19
+3		| item 4				| 2019-11-23
+4		| item 5				| 2017-11-23
+5		| item 6				| 2023-02-11
+6		| item 7				| 2022-06-11
+7		| item 8				| 2022-07-11
+--------------------------------------------
+sort by date again!
+--------------------------------------------
+				List 2		
+--------------------------------------------
+Index	| Item					| Deadline
+--------------------------------------------
+0		| item 5				| 2017-11-23
+1		| item 4				| 2019-11-23
+2		| item 7				| 2022-06-11
+3		| item 8				| 2022-07-11
+4		| item 1				| 2023-01-19
+5		| item 6				| 2023-02-11
+6		| item 2				| 2023-02-19
+7		| item 3				| 2023-03-19
+--------------------------------------------
+

@@ -1,0 +1,22 @@
+Phase 1
+Item:
+::valid_date?
+true
+true
+false
+false
+false
+
+#initialize
+#<Item:0x00000001047d7a30 @title="Fix login page", @deadline="2019-10-25", @description="The page loads too slow.">
+#<Item:0x00000001047d7670 @title="Buy Cheese", @deadline="2019-10-21", @description="You require American, Swiss, Feta, and Mozzarella cheese for the Happy hour!">
+
+Original Item 1:
+"Fix login page"
+"2019-10-25"
+"The page loads too slow."
+
+Modified Item 1:
+"Fix profile page"
+"2023-04-12"
+"The page loads too slow."

@@ -1,7 +1,7 @@
 class Item
 	attr_accessor :title, :deadline, :description
 
-    def self.valid_date?(date_string)
+	def self.valid_date?(date_string)
 		return false if date_string[4] != "-" || date_string[7] != "-"
 		year = date_string[0..3].to_i	# YYYY
 		month = date_string[5..6].to_i	# MM
@@ -12,7 +12,7 @@ class Item
 		day = day >= 1 && day <= 31
 
 		year && month && day
-    end
+	end
 
 	def initialize(title, deadline, description)
 		@title = title

@@ -45,10 +45,11 @@ class List
 		puts "--------------------------------------------"
 		puts "\t\t#{self.label}\t\t"
 		puts "--------------------------------------------"
-		puts "Index\t| Item\t\t\t| Deadline"
+		puts "Index\t| Item\t\t|  Deadline  | Done"
 		puts "--------------------------------------------"
 		@items.each_with_index do |item, idx|
-			puts "#{idx}\t| #{item.title}\t\t| #{item.deadline}"
+			progress = item.done ? "[✓]" : "[ ]"
+			puts "#{idx}\t| #{item.title}\t\t| #{item.deadline} | #{progress}"
 		end
 		puts "--------------------------------------------"
 	end
@@ -57,7 +58,8 @@ class List
 		if valid_index?(index)
 			puts "--------------------------------------------"
 			item = self[index]
-			puts "#{item.title} \t\t\t\t#{item.deadline}"
+			progress = item.done ? "[✓]" : "[ ]"
+			puts "#{item.title} \t\t#{item.deadline} \t\t#{progress}"
 			puts "#{item.description}"
 			puts "--------------------------------------------"
 		end
@@ -68,7 +70,8 @@ class List
 		puts "\t\tPRIORITY\t\t"
 		puts "--------------------------------------------"
 		item = self.priority
-		puts "#{item.title} \t\t\t\t #{item.deadline}"
+		progress = item.done ? "[✓]" : "[ ]"
+		puts "#{item.title} \t\t #{item.deadline} \t\t#{progress}"
 		puts "#{item.description}"
 		puts "--------------------------------------------"
 	end
@@ -109,5 +112,9 @@ class List
 
 	def sort_by_date!
 		@items.sort_by! { |item| item.deadline }
+	end
+
+	def toggle_item(index)
+		@items[index].toggle if valid_index?(index)
 	end
 end

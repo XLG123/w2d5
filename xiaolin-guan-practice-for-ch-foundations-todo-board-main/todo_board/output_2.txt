@@ -1,0 +1,78 @@
+Phase 2
+#<Item:0x000000010454dbc0 @title="item1", @deadline="2021-12-27", @description="a pencil", @done=false>
+#<Item:0x000000010454d788 @title="item2", @deadline="2021-10-17", @description="a pen", @done=false>
+#<Item:0x000000010454d490 @title="item3", @deadline="2008-07-06", @description="a diary", @done=false>
+
+#<Item:0x000000010454dbc0 @title="item1", @deadline="2021-12-27", @description="a pencil", @done=true>
+#<Item:0x000000010454dbc0 @title="item1", @deadline="2021-12-27", @description="a pencil", @done=false>
+#<Item:0x000000010454dbc0 @title="item1", @deadline="2021-12-27", @description="a pencil", @done=true>
+#<Item:0x000000010454dbc0 @title="item1", @deadline="2021-12-27", @description="a pencil", @done=false>
+#<Item:0x000000010454dbc0 @title="item1", @deadline="2021-12-27", @description="a pencil", @done=true>
+
+#<List:0x0000000104547f68 @label="LIST 1", @items=[#<Item:0x0000000104547c70 @title="item1", @deadline="2021-12-27", @description="a pencil", @done=false>, #<Item:0x0000000104547a18 @title="item2", @deadline="2021-10-17", @description="a pen", @done=false>, #<Item:0x00000001045476f8 @title="item3", @deadline="2008-07-06", @description="a diary", @done=false>]>
+--------------------------------------------
+		LIST 1		
+--------------------------------------------
+Index	| Item		|  Deadline  | Done
+--------------------------------------------
+0	| item1		| 2021-12-27 | [ ]
+1	| item2		| 2021-10-17 | [ ]
+2	| item3		| 2008-07-06 | [ ]
+--------------------------------------------
+
+
+--------------------------------------------
+		LIST 1		
+--------------------------------------------
+Index	| Item		|  Deadline  | Done
+--------------------------------------------
+0	| item1		| 2021-12-27 | [ ]
+1	| item3		| 2008-07-06 | [ ]
+2	| item2		| 2021-10-17 | [ ]
+--------------------------------------------
+
+
+--------------------------------------------
+item3 		2008-07-06 		[ ]
+a diary
+--------------------------------------------
+
+
+--------------------------------------------
+		PRIORITY		
+--------------------------------------------
+item1 		 2021-12-27 		[ ]
+a pencil
+--------------------------------------------
+Enter a command: You just entered mktodo ["item1", "2021-02-10"]
+Enter a command: You just entered mktodo ["item2", "2020-02-12"]
+Enter a command: You just entered mktodo ["item3", "2019-02-19"]
+Enter a command: You just entered mktodo ["item4", "2020-09-04"]
+
+Enter a command: You just entered print []
+--------------------------------------------
+		BOARD 1		
+--------------------------------------------
+Index	| Item		|  Deadline  | Done
+--------------------------------------------
+0	| item1		| 2021-02-10 | [ ]
+1	| item2		| 2020-02-12 | [ ]
+2	| item3		| 2019-02-19 | [ ]
+3	| item4		| 2020-09-04 | [ ]
+--------------------------------------------
+
+
+Enter a command: You just entered toggle ["1"]
+Enter a command: You just entered print []
+--------------------------------------------
+		BOARD 1		
+--------------------------------------------
+Index	| Item		|  Deadline  | Done
+--------------------------------------------
+0	| item1		| 2021-02-10 | [ ]
+1	| item2		| 2020-02-12 | [✓]
+2	| item3		| 2019-02-19 | [ ]
+3	| item4		| 2020-09-04 | [ ]
+--------------------------------------------
+
+

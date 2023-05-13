@@ -26,6 +26,8 @@ class TodoBoard
             @list.print_priority
         when 'print'
             @list.print
+        when 'toggle'
+            @list.toggle_item(*args.map(&:to_i))
         when 'quit'
             return false
         else

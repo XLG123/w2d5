@@ -219,5 +219,5 @@ puts
 board_1.get_command # quit
 board_1.get_command # should not execute
 board_1.get_command # should not execute
-# p board_1
-# puts
+puts
+puts

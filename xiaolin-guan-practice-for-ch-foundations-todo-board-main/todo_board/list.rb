@@ -131,10 +131,6 @@ class List
 	end
 
 	def purge
-		# @items.each do |item|
-		# 	self.remove_item(@items.find_index(item)) if item.done 
-		# end
-
 		index = 0
 		while index < @items.length
 			if @items[index].done

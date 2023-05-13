@@ -28,6 +28,10 @@ class TodoBoard
             @list.print
         when 'toggle'
             @list.toggle_item(*args.map(&:to_i))
+        when 'rm'
+            @list.remove_item(*args.map(&:to_i))
+        when 'purge'
+            @list.purge
         when 'quit'
             return false
         else

@@ -1,15 +1,15 @@
 Phase 2
-#<Item:0x000000010454dbc0 @title="item1", @deadline="2021-12-27", @description="a pencil", @done=false>
-#<Item:0x000000010454d788 @title="item2", @deadline="2021-10-17", @description="a pen", @done=false>
-#<Item:0x000000010454d490 @title="item3", @deadline="2008-07-06", @description="a diary", @done=false>
+#<Item:0x0000000102ee7930 @title="item1", @deadline="2021-12-27", @description="a pencil", @done=false>
+#<Item:0x0000000102ee7610 @title="item2", @deadline="2021-10-17", @description="a pen", @done=false>
+#<Item:0x0000000102ee7318 @title="item3", @deadline="2008-07-06", @description="a diary", @done=false>
 
-#<Item:0x000000010454dbc0 @title="item1", @deadline="2021-12-27", @description="a pencil", @done=true>
-#<Item:0x000000010454dbc0 @title="item1", @deadline="2021-12-27", @description="a pencil", @done=false>
-#<Item:0x000000010454dbc0 @title="item1", @deadline="2021-12-27", @description="a pencil", @done=true>
-#<Item:0x000000010454dbc0 @title="item1", @deadline="2021-12-27", @description="a pencil", @done=false>
-#<Item:0x000000010454dbc0 @title="item1", @deadline="2021-12-27", @description="a pencil", @done=true>
+#<Item:0x0000000102ee7930 @title="item1", @deadline="2021-12-27", @description="a pencil", @done=true>
+#<Item:0x0000000102ee7930 @title="item1", @deadline="2021-12-27", @description="a pencil", @done=false>
+#<Item:0x0000000102ee7930 @title="item1", @deadline="2021-12-27", @description="a pencil", @done=true>
+#<Item:0x0000000102ee7930 @title="item1", @deadline="2021-12-27", @description="a pencil", @done=false>
+#<Item:0x0000000102ee7930 @title="item1", @deadline="2021-12-27", @description="a pencil", @done=true>
 
-#<List:0x0000000104547f68 @label="LIST 1", @items=[#<Item:0x0000000104547c70 @title="item1", @deadline="2021-12-27", @description="a pencil", @done=false>, #<Item:0x0000000104547a18 @title="item2", @deadline="2021-10-17", @description="a pen", @done=false>, #<Item:0x00000001045476f8 @title="item3", @deadline="2008-07-06", @description="a diary", @done=false>]>
+#<List:0x0000000102ee40a0 @label="LIST 1", @items=[#<Item:0x0000000102edfc58 @title="item1", @deadline="2021-12-27", @description="a pencil", @done=false>, #<Item:0x0000000102edf640 @title="item2", @deadline="2021-10-17", @description="a pen", @done=false>, #<Item:0x0000000102edf3e8 @title="item3", @deadline="2008-07-06", @description="a diary", @done=false>]>
 --------------------------------------------
 		LIST 1		
 --------------------------------------------
@@ -44,10 +44,14 @@ a diary
 item1 		 2021-12-27 		[ ]
 a pencil
 --------------------------------------------
-Enter a command: You just entered mktodo ["item1", "2021-02-10"]
-Enter a command: You just entered mktodo ["item2", "2020-02-12"]
-Enter a command: You just entered mktodo ["item3", "2019-02-19"]
-Enter a command: You just entered mktodo ["item4", "2020-09-04"]
+Enter a command: You just entered mktodo ["item1", "2020-03-12"]
+Enter a command: You just entered mktodo ["item2", "2020-03-23"]
+Enter a command: You just entered mktodo ["item3", "2009-12-21"]
+Enter a command: You just entered mktodo ["item4", "2018-09-23"]
+Enter a command: You just entered mktodo ["item5", "2009-11-20"]
+Enter a command: You just entered mktodo ["item6", "2021-07-04"]
+Enter a command: You just entered mktodo ["item7", "2016-01-02"]
+Enter a command: You just entered mktodo ["item8", "2007-05-30"]
 
 Enter a command: You just entered print []
 --------------------------------------------
@@ -55,10 +59,122 @@ Enter a command: You just entered print []
 --------------------------------------------
 Index	| Item		|  Deadline  | Done
 --------------------------------------------
-0	| item1		| 2021-02-10 | [ ]
-1	| item2		| 2020-02-12 | [ ]
-2	| item3		| 2019-02-19 | [ ]
-3	| item4		| 2020-09-04 | [ ]
+0	| item1		| 2020-03-12 | [ ]
+1	| item2		| 2020-03-23 | [ ]
+2	| item3		| 2009-12-21 | [ ]
+3	| item4		| 2018-09-23 | [ ]
+4	| item5		| 2009-11-20 | [ ]
+5	| item6		| 2021-07-04 | [ ]
+6	| item7		| 2016-01-02 | [ ]
+7	| item8		| 2007-05-30 | [ ]
+--------------------------------------------
+
+
+Enter a command: You just entered toggle ["2"]
+Enter a command: You just entered print []
+--------------------------------------------
+		BOARD 1		
+--------------------------------------------
+Index	| Item		|  Deadline  | Done
+--------------------------------------------
+0	| item1		| 2020-03-12 | [ ]
+1	| item2		| 2020-03-23 | [ ]
+2	| item3		| 2009-12-21 | [✓]
+3	| item4		| 2018-09-23 | [ ]
+4	| item5		| 2009-11-20 | [ ]
+5	| item6		| 2021-07-04 | [ ]
+6	| item7		| 2016-01-02 | [ ]
+7	| item8		| 2007-05-30 | [ ]
+--------------------------------------------
+
+
+Enter a command: You just entered rm ["0"]
+Enter a command: You just entered print []
+--------------------------------------------
+		BOARD 1		
+--------------------------------------------
+Index	| Item		|  Deadline  | Done
+--------------------------------------------
+0	| item2		| 2020-03-23 | [ ]
+1	| item3		| 2009-12-21 | [✓]
+2	| item4		| 2018-09-23 | [ ]
+3	| item5		| 2009-11-20 | [ ]
+4	| item6		| 2021-07-04 | [ ]
+5	| item7		| 2016-01-02 | [ ]
+6	| item8		| 2007-05-30 | [ ]
+--------------------------------------------
+
+
+Enter a command: You just entered rm ["6"]
+Enter a command: You just entered print []
+--------------------------------------------
+		BOARD 1		
+--------------------------------------------
+Index	| Item		|  Deadline  | Done
+--------------------------------------------
+0	| item2		| 2020-03-23 | [ ]
+1	| item3		| 2009-12-21 | [✓]
+2	| item4		| 2018-09-23 | [ ]
+3	| item5		| 2009-11-20 | [ ]
+4	| item6		| 2021-07-04 | [ ]
+5	| item7		| 2016-01-02 | [ ]
+--------------------------------------------
+
+
+Enter a command: You just entered rm ["4"]
+Enter a command: You just entered print []
+--------------------------------------------
+		BOARD 1		
+--------------------------------------------
+Index	| Item		|  Deadline  | Done
+--------------------------------------------
+0	| item2		| 2020-03-23 | [ ]
+1	| item3		| 2009-12-21 | [✓]
+2	| item4		| 2018-09-23 | [ ]
+3	| item5		| 2009-11-20 | [ ]
+4	| item7		| 2016-01-02 | [ ]
+--------------------------------------------
+
+
+Enter a command: You just entered rm ["3"]
+Enter a command: You just entered print []
+--------------------------------------------
+		BOARD 1		
+--------------------------------------------
+Index	| Item		|  Deadline  | Done
+--------------------------------------------
+0	| item2		| 2020-03-23 | [ ]
+1	| item3		| 2009-12-21 | [✓]
+2	| item4		| 2018-09-23 | [ ]
+3	| item7		| 2016-01-02 | [ ]
+--------------------------------------------
+
+
+Enter a command: You just entered toggle ["3"]
+Enter a command: You just entered print []
+--------------------------------------------
+		BOARD 1		
+--------------------------------------------
+Index	| Item		|  Deadline  | Done
+--------------------------------------------
+0	| item2		| 2020-03-23 | [ ]
+1	| item3		| 2009-12-21 | [✓]
+2	| item4		| 2018-09-23 | [ ]
+3	| item7		| 2016-01-02 | [✓]
+--------------------------------------------
+
+
+Enter a command: You just entered toggle ["2"]
+Enter a command: You just entered print []
+--------------------------------------------
+		BOARD 1		
+--------------------------------------------
+Index	| Item		|  Deadline  | Done
+--------------------------------------------
+0	| item2		| 2020-03-23 | [ ]
+1	| item3		| 2009-12-21 | [✓]
+2	| item4		| 2018-09-23 | [✓]
+3	| item7		| 2016-01-02 | [✓]
 --------------------------------------------
 
 
@@ -69,10 +185,80 @@ Enter a command: You just entered print []
 --------------------------------------------
 Index	| Item		|  Deadline  | Done
 --------------------------------------------
-0	| item1		| 2021-02-10 | [ ]
-1	| item2		| 2020-02-12 | [✓]
-2	| item3		| 2019-02-19 | [ ]
-3	| item4		| 2020-09-04 | [ ]
+0	| item2		| 2020-03-23 | [ ]
+1	| item3		| 2009-12-21 | [ ]
+2	| item4		| 2018-09-23 | [✓]
+3	| item7		| 2016-01-02 | [✓]
 --------------------------------------------
 
+
+Enter a command: You just entered toggle ["2"]
+Enter a command: You just entered print []
+--------------------------------------------
+		BOARD 1		
+--------------------------------------------
+Index	| Item		|  Deadline  | Done
+--------------------------------------------
+0	| item2		| 2020-03-23 | [ ]
+1	| item3		| 2009-12-21 | [ ]
+2	| item4		| 2018-09-23 | [ ]
+3	| item7		| 2016-01-02 | [✓]
+--------------------------------------------
+
+
+Enter a command: You just entered purge []
+Enter a command: You just entered print []
+--------------------------------------------
+		BOARD 1		
+--------------------------------------------
+Index	| Item		|  Deadline  | Done
+--------------------------------------------
+0	| item2		| 2020-03-23 | [ ]
+1	| item3		| 2009-12-21 | [ ]
+2	| item4		| 2018-09-23 | [ ]
+--------------------------------------------
+
+Enter a command: You just entered mktodo ["item1", "2008-01-01"]
+Enter a command: You just entered mktodo ["item2", "2007-01-01"]
+Enter a command: You just entered mktodo ["item3", "2008-01-23"]
+Enter a command: You just entered mktodo ["item4", "2006-11-02"]
+Enter a command: You just entered mktodo ["item5", "2019-12-22"]
+Enter a command: You just entered mktodo ["item6", "2018-08-07"]
+Enter a command: You just entered mktodo ["item6", "2016-04-05"]
+Enter a command: You just entered mktodo ["item8", "2009-03-12"]
+
+Enter a command: You just entered print []
+--------------------------------------------
+		Board 2		
+--------------------------------------------
+Index	| Item		|  Deadline  | Done
+--------------------------------------------
+0	| item1		| 2008-01-01 | [ ]
+1	| item2		| 2007-01-01 | [ ]
+2	| item3		| 2008-01-23 | [ ]
+3	| item4		| 2006-11-02 | [ ]
+4	| item5		| 2019-12-22 | [ ]
+5	| item6		| 2018-08-07 | [ ]
+6	| item6		| 2016-04-05 | [ ]
+7	| item8		| 2009-03-12 | [ ]
+--------------------------------------------
+
+
+Enter a command: You just entered toggle ["1"]
+Enter a command: You just entered toggle ["2"]
+Enter a command: You just entered toggle ["3"]
+Enter a command: You just entered toggle ["4"]
+Enter a command: You just entered toggle ["6"]
+Enter a command: You just entered toggle ["7"]
+
+Enter a command: You just entered purge []
+Enter a command: You just entered print []
+--------------------------------------------
+		Board 2		
+--------------------------------------------
+Index	| Item		|  Deadline  | Done
+--------------------------------------------
+0	| item1		| 2008-01-01 | [ ]
+1	| item6		| 2018-08-07 | [ ]
+--------------------------------------------
 

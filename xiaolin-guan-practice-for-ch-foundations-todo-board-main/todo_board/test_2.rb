@@ -39,14 +39,88 @@ board_1.get_command # add item 1
 board_1.get_command # add item 2
 board_1.get_command # add item 3
 board_1.get_command # add item 4
+board_1.get_command # add item 5
+board_1.get_command # add item 6
+board_1.get_command # add item 7
+board_1.get_command # add item 8
 puts
 
 board_1.get_command # print
 puts
 puts
 
-board_1.get_command # toggle item 2
-
+board_1.get_command # toggle index 2
 board_1.get_command # print
 puts
+puts
+
+board_1.get_command # remove first item from the list
+board_1.get_command # print
+puts
+puts
+
+board_1.get_command # remove last item from the list
+board_1.get_command # print
+puts
+puts
+
+board_1.get_command # remove middle item from the list
+board_1.get_command # print
+puts
+puts
+
+board_1.get_command # remove middle item from the list
+board_1.get_command # print
+puts
+puts
+
+board_1.get_command # toggle index 3
+board_1.get_command # print
+puts
+puts
+
+board_1.get_command # toggle index 2
+board_1.get_command # print
+puts
+puts
+
+board_1.get_command # toggle index 6
+board_1.get_command # print
+puts
+puts
+
+board_1.get_command # toggle index 2
+board_1.get_command # print
+puts
+puts
+
+board_1.get_command # purge
+board_1.get_command # print
+puts
+
+board_2 = TodoBoard.new("Board 2")
+board_2.get_command # add item 1 
+board_2.get_command # add item 2
+board_2.get_command # add item 3
+board_2.get_command # add item 4
+board_2.get_command # add item 5
+board_2.get_command # add item 6
+board_2.get_command # add item 7
+board_2.get_command # add item 8
+puts
+
+board_2.get_command # print
+puts
+puts
+
+board_2.get_command # toggle index 1
+board_2.get_command # toggle index 2
+board_2.get_command # toggle index 3
+board_2.get_command # toggle index 4
+board_2.get_command # toggle index 6
+board_2.get_command # toggle index 7
+puts
+
+board_2.get_command # purge
+board_2.get_command # print
 puts

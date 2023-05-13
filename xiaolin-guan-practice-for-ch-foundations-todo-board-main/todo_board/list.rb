@@ -117,4 +117,31 @@ class List
 	def toggle_item(index)
 		@items[index].toggle if valid_index?(index)
 	end
+
+	def remove_item(index)
+		return false if !valid_index?(index)
+		if index == 0
+			@items.shift
+		elsif index == @items.length - 1
+			@items.pop
+		else
+			@items.slice!(index)
+		end
+		true
+	end
+
+	def purge
+		# @items.each do |item|
+		# 	self.remove_item(@items.find_index(item)) if item.done 
+		# end
+
+		index = 0
+		while index < @items.length
+			if @items[index].done
+				self.remove_item(index)
+			else
+				index += 1
+			end
+		end
+	end
 end

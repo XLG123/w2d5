@@ -43,12 +43,12 @@ class List
 
 	def print
 		puts "--------------------------------------------"
-		puts "\t\t\t\t#{self.label}\t\t"
+		puts "\t\t#{self.label}\t\t"
 		puts "--------------------------------------------"
-		puts "Index\t| Item\t\t\t\t\t| Deadline"
+		puts "Index\t| Item\t\t\t| Deadline"
 		puts "--------------------------------------------"
 		@items.each_with_index do |item, idx|
-			puts "#{idx}\t\t| #{item.title}\t\t\t\t| #{item.deadline}"
+			puts "#{idx}\t| #{item.title}\t\t| #{item.deadline}"
 		end
 		puts "--------------------------------------------"
 	end
@@ -57,7 +57,7 @@ class List
 		if valid_index?(index)
 			puts "--------------------------------------------"
 			item = self[index]
-			puts "#{item.title} \t\t\t\t\t\t\t #{item.deadline}"
+			puts "#{item.title} \t\t\t\t#{item.deadline}"
 			puts "#{item.description}"
 			puts "--------------------------------------------"
 		end
@@ -65,10 +65,10 @@ class List
 	
 	def print_priority
 		puts "--------------------------------------------"
-		puts "\t\t\t\tPRIORITY\t\t"
+		puts "\t\tPRIORITY\t\t"
 		puts "--------------------------------------------"
 		item = self.priority
-		puts "#{item.title} \t\t\t\t\t\t\t #{item.deadline}"
+		puts "#{item.title} \t\t\t\t #{item.deadline}"
 		puts "#{item.description}"
 		puts "--------------------------------------------"
 	end

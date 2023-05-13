@@ -168,3 +168,56 @@ list_2.sort_by_date!
 list_2.print
 puts
 
+puts "Todo Board:"
+puts "Todo Board 1"
+board_1 = TodoBoard.new("board 1")
+p board_1
+puts
+
+puts "get_command"
+# mktodo
+board_1.get_command # add item to todo board 1
+board_1.get_command # add item to todo board 1
+board_1.get_command # add item to todo board 1
+board_1.get_command # add item to todo board 1
+puts 
+p board_1
+puts
+
+# up
+board_1.get_command # move item 2 to the top, up 1
+board_1.get_command # print
+puts
+
+board_1.get_command # move item 4 to the top, up 3, 4 
+board_1.get_command # print
+puts
+
+board_1.get_command # move item 3 to the top, up 3 9
+board_1.get_command # print
+puts
+# order should be: item3, item4, item2, item1
+
+# down
+board_1.get_command # move item 3 to the bottom, down 1 8
+board_1.get_command # print
+puts
+
+# swap
+board_1.get_command # swap index 1 and index 2
+board_1.get_command # print
+puts
+
+board_1.get_command # priority, item4 should be at the top.
+board_1.get_command # print
+puts
+
+board_1.get_command # print
+puts
+# order should be: item4, item1, item2, item3
+
+board_1.get_command # quit
+board_1.get_command # should not execute
+board_1.get_command # should not execute
+# p board_1
+# puts

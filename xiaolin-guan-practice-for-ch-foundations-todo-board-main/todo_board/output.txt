@@ -8,8 +8,8 @@ false
 false
 
 #initialize
-#<Item:0x0000000102273000 @title="Fix login page", @deadline="2019-10-25", @description="The page loads too slow.">
-#<Item:0x0000000102271048 @title="Buy Cheese", @deadline="2019-10-21", @description="You require American, Swiss, Feta, and Mozzarella cheese for the Happy hour!">
+#<Item:0x00000001003ce848 @title="Fix login page", @deadline="2019-10-25", @description="The page loads too slow.">
+#<Item:0x00000001003ce550 @title="Buy Cheese", @deadline="2019-10-21", @description="You require American, Swiss, Feta, and Mozzarella cheese for the Happy hour!">
 
 Original Item 1:
 "Fix login page"
@@ -24,7 +24,7 @@ Modified Item 1:
 true
 true
 false
-#<List:0x000000010226bee0 @label="List_1", @items=[#<Item:0x000000010226ba08 @title="Fix profile page", @deadline="2023-04-12", @description="The page loads too slow.">, #<Item:0x000000010226b530 @title="Buy Cheese", @deadline="2019-10-21", @description="You require American, Swiss, Feta, and Mozzarella cheese for the Happy hour!">]>
+#<List:0x00000001003cce08 @label="List_1", @items=[#<Item:0x00000001003cc958 @title="Fix profile page", @deadline="2023-04-12", @description="The page loads too slow.">, #<Item:0x00000001003cc520 @title="Buy Cheese", @deadline="2019-10-21", @description="You require American, Swiss, Feta, and Mozzarella cheese for the Happy hour!">]>
 
 List 1 has 2 items
 
@@ -39,43 +39,43 @@ true
 false
 
 List 1 after swapping item 1 and item 2:
-#<List:0x000000010226bee0 @label="List_1", @items=[#<Item:0x000000010226b530 @title="Buy Cheese", @deadline="2019-10-21", @description="You require American, Swiss, Feta, and Mozzarella cheese for the Happy hour!">, #<Item:0x000000010226ba08 @title="Fix profile page", @deadline="2023-04-12", @description="The page loads too slow.">]>
+#<List:0x00000001003cce08 @label="List_1", @items=[#<Item:0x00000001003cc520 @title="Buy Cheese", @deadline="2019-10-21", @description="You require American, Swiss, Feta, and Mozzarella cheese for the Happy hour!">, #<Item:0x00000001003cc958 @title="Fix profile page", @deadline="2023-04-12", @description="The page loads too slow.">]>
 
 List 1 with three items
-#<List:0x000000010226bee0 @label="List_1", @items=[#<Item:0x000000010226b530 @title="Buy Cheese", @deadline="2019-10-21", @description="You require American, Swiss, Feta, and Mozzarella cheese for the Happy hour!">, #<Item:0x000000010226ba08 @title="Fix profile page", @deadline="2023-04-12", @description="The page loads too slow.">, #<Item:0x000000010226a5b8 @title="item 3", @deadline="2023-02-12", @description=nil>]>
+#<List:0x00000001003cce08 @label="List_1", @items=[#<Item:0x00000001003cc520 @title="Buy Cheese", @deadline="2019-10-21", @description="You require American, Swiss, Feta, and Mozzarella cheese for the Happy hour!">, #<Item:0x00000001003cc958 @title="Fix profile page", @deadline="2023-04-12", @description="The page loads too slow.">, #<Item:0x00000001003c6788 @title="item 3", @deadline="2023-02-12", @description=nil>]>
 
 #[](index)
 nil
 
-#<Item:0x000000010226ba08 @title="Fix profile page", @deadline="2023-04-12", @description="The page loads too slow.">
+#<Item:0x00000001003cc958 @title="Fix profile page", @deadline="2023-04-12", @description="The page loads too slow.">
 
 #priority
-#<Item:0x000000010226b530 @title="Buy Cheese", @deadline="2019-10-21", @description="You require American, Swiss, Feta, and Mozzarella cheese for the Happy hour!">
+#<Item:0x00000001003cc520 @title="Buy Cheese", @deadline="2019-10-21", @description="You require American, Swiss, Feta, and Mozzarella cheese for the Happy hour!">
 
 print
 --------------------------------------------
-				List 2		
+		List 2		
 --------------------------------------------
-Index	| Item					| Deadline
+Index	| Item			| Deadline
 --------------------------------------------
-0		| item 1				| 2023-01-19
-1		| item 2				| 2023-02-19
-2		| item 3				| 2023-03-19
+0	| item 1		| 2023-01-19
+1	| item 2		| 2023-02-19
+2	| item 3		| 2023-03-19
 --------------------------------------------
 
 
 print_full_item
 --------------------------------------------
-item 2 							 2023-02-19
+item 2 				2023-02-19
 Notebook
 --------------------------------------------
 
 
 print_priority
 --------------------------------------------
-				PRIORITY		
+		PRIORITY		
 --------------------------------------------
-item 1 							 2023-01-19
+item 1 				 2023-01-19
 Pencil
 --------------------------------------------
 
@@ -83,156 +83,267 @@ Pencil
 up
 move up item 2: true
 --------------------------------------------
-				List 2		
+		List 2		
 --------------------------------------------
-Index	| Item					| Deadline
+Index	| Item			| Deadline
 --------------------------------------------
-0		| item 2				| 2023-02-19
-1		| item 1				| 2023-01-19
-2		| item 3				| 2023-03-19
+0	| item 2		| 2023-02-19
+1	| item 1		| 2023-01-19
+2	| item 3		| 2023-03-19
 --------------------------------------------
 
 move up item 3: true
 --------------------------------------------
-				List 2		
+		List 2		
 --------------------------------------------
-Index	| Item					| Deadline
+Index	| Item			| Deadline
 --------------------------------------------
-0		| item 2				| 2023-02-19
-1		| item 3				| 2023-03-19
-2		| item 1				| 2023-01-19
+0	| item 2		| 2023-02-19
+1	| item 3		| 2023-03-19
+2	| item 1		| 2023-01-19
 --------------------------------------------
 
 move up item 1: true
 --------------------------------------------
-				List 2		
+		List 2		
 --------------------------------------------
-Index	| Item					| Deadline
+Index	| Item			| Deadline
 --------------------------------------------
-0		| item 1				| 2023-01-19
-1		| item 2				| 2023-02-19
-2		| item 3				| 2023-03-19
+0	| item 1		| 2023-01-19
+1	| item 2		| 2023-02-19
+2	| item 3		| 2023-03-19
 --------------------------------------------
 
 move up item 3: true
 --------------------------------------------
-				List 2		
+		List 2		
 --------------------------------------------
-Index	| Item					| Deadline
+Index	| Item			| Deadline
 --------------------------------------------
-0		| item 3				| 2023-03-19
-1		| item 1				| 2023-01-19
-2		| item 2				| 2023-02-19
+0	| item 3		| 2023-03-19
+1	| item 1		| 2023-01-19
+2	| item 2		| 2023-02-19
 --------------------------------------------
 
 move up item 4: false
 --------------------------------------------
-				List 2		
+		List 2		
 --------------------------------------------
-Index	| Item					| Deadline
+Index	| Item			| Deadline
 --------------------------------------------
-0		| item 3				| 2023-03-19
-1		| item 1				| 2023-01-19
-2		| item 2				| 2023-02-19
+0	| item 3		| 2023-03-19
+1	| item 1		| 2023-01-19
+2	| item 2		| 2023-02-19
 --------------------------------------------
 
 
 down
 move down item 1: true
 --------------------------------------------
-				List 2		
+		List 2		
 --------------------------------------------
-Index	| Item					| Deadline
+Index	| Item			| Deadline
 --------------------------------------------
-0		| item 3				| 2023-03-19
-1		| item 2				| 2023-02-19
-2		| item 1				| 2023-01-19
+0	| item 3		| 2023-03-19
+1	| item 2		| 2023-02-19
+2	| item 1		| 2023-01-19
 --------------------------------------------
 
 move down item 3: true
 --------------------------------------------
-				List 2		
+		List 2		
 --------------------------------------------
-Index	| Item					| Deadline
+Index	| Item			| Deadline
 --------------------------------------------
-0		| item 2				| 2023-02-19
-1		| item 1				| 2023-01-19
-2		| item 3				| 2023-03-19
+0	| item 2		| 2023-02-19
+1	| item 1		| 2023-01-19
+2	| item 3		| 2023-03-19
 --------------------------------------------
 
 move down item 2: true
 --------------------------------------------
-				List 2		
+		List 2		
 --------------------------------------------
-Index	| Item					| Deadline
+Index	| Item			| Deadline
 --------------------------------------------
-0		| item 1				| 2023-01-19
-1		| item 3				| 2023-03-19
-2		| item 2				| 2023-02-19
+0	| item 1		| 2023-01-19
+1	| item 3		| 2023-03-19
+2	| item 2		| 2023-02-19
 --------------------------------------------
 
 move down item 3: true
 --------------------------------------------
-				List 2		
+		List 2		
 --------------------------------------------
-Index	| Item					| Deadline
+Index	| Item			| Deadline
 --------------------------------------------
-0		| item 1				| 2023-01-19
-1		| item 2				| 2023-02-19
-2		| item 3				| 2023-03-19
+0	| item 1		| 2023-01-19
+1	| item 2		| 2023-02-19
+2	| item 3		| 2023-03-19
 --------------------------------------------
 
 move down item 1: true
 --------------------------------------------
-				List 2		
+		List 2		
 --------------------------------------------
-Index	| Item					| Deadline
+Index	| Item			| Deadline
 --------------------------------------------
-0		| item 2				| 2023-02-19
-1		| item 3				| 2023-03-19
-2		| item 1				| 2023-01-19
+0	| item 2		| 2023-02-19
+1	| item 3		| 2023-03-19
+2	| item 1		| 2023-01-19
 --------------------------------------------
 
 
 sort_by_date!
 --------------------------------------------
-				List 2		
+		List 2		
 --------------------------------------------
-Index	| Item					| Deadline
+Index	| Item			| Deadline
 --------------------------------------------
-0		| item 1				| 2023-01-19
-1		| item 2				| 2023-02-19
-2		| item 3				| 2023-03-19
+0	| item 1		| 2023-01-19
+1	| item 2		| 2023-02-19
+2	| item 3		| 2023-03-19
 --------------------------------------------
 
 Add more items:
 --------------------------------------------
-				List 2		
+		List 2		
 --------------------------------------------
-Index	| Item					| Deadline
+Index	| Item			| Deadline
 --------------------------------------------
-0		| item 1				| 2023-01-19
-1		| item 2				| 2023-02-19
-2		| item 3				| 2023-03-19
-3		| item 4				| 2019-11-23
-4		| item 5				| 2017-11-23
-5		| item 6				| 2023-02-11
-6		| item 7				| 2022-06-11
-7		| item 8				| 2022-07-11
+0	| item 1		| 2023-01-19
+1	| item 2		| 2023-02-19
+2	| item 3		| 2023-03-19
+3	| item 4		| 2019-11-23
+4	| item 5		| 2017-11-23
+5	| item 6		| 2023-02-11
+6	| item 7		| 2022-06-11
+7	| item 8		| 2022-07-11
 --------------------------------------------
 sort by date again!
 --------------------------------------------
-				List 2		
+		List 2		
 --------------------------------------------
-Index	| Item					| Deadline
+Index	| Item			| Deadline
 --------------------------------------------
-0		| item 5				| 2017-11-23
-1		| item 4				| 2019-11-23
-2		| item 7				| 2022-06-11
-3		| item 8				| 2022-07-11
-4		| item 1				| 2023-01-19
-5		| item 6				| 2023-02-11
-6		| item 2				| 2023-02-19
-7		| item 3				| 2023-03-19
+0	| item 5		| 2017-11-23
+1	| item 4		| 2019-11-23
+2	| item 7		| 2022-06-11
+3	| item 8		| 2022-07-11
+4	| item 1		| 2023-01-19
+5	| item 6		| 2023-02-11
+6	| item 2		| 2023-02-19
+7	| item 3		| 2023-03-19
 --------------------------------------------
 
+Todo Board:
+Todo Board 1
+#<TodoBoard:0x00000001003d4018 @list=#<List:0x00000001003cfd60 @label="board 1", @items=[]>>
+
+get_command
+Enter a command: You just entered mktodo ["item1", "2021-02-10"]
+Enter a command: You just entered mktodo ["item2", "2020-02-12"]
+Enter a command: You just entered mktodo ["item3", "2019-02-19"]
+Enter a command: You just entered mktodo ["item4", "2020-09-04"]
+
+#<TodoBoard:0x00000001003d4018 @list=#<List:0x00000001003cfd60 @label="board 1", @items=[#<Item:0x00000001003cedc0 @title="item1", @deadline="2021-02-10", @description=nil>, #<Item:0x00000001003ce230 @title="item2", @deadline="2020-02-12", @description=nil>, #<Item:0x00000001003ccfe8 @title="item3", @deadline="2019-02-19", @description=nil>, #<Item:0x00000001003cc2f0 @title="item4", @deadline="2020-09-04", @description=nil>]>>
+
+Enter a command: You just entered up ["1"]
+Enter a command: You just entered print []
+--------------------------------------------
+		board 1		
+--------------------------------------------
+Index	| Item			| Deadline
+--------------------------------------------
+0	| item2		| 2020-02-12
+1	| item1		| 2021-02-10
+2	| item3		| 2019-02-19
+3	| item4		| 2020-09-04
+--------------------------------------------
+
+Enter a command: You just entered up ["3", "4"]
+Enter a command: You just entered print []
+--------------------------------------------
+		board 1		
+--------------------------------------------
+Index	| Item			| Deadline
+--------------------------------------------
+0	| item4		| 2020-09-04
+1	| item2		| 2020-02-12
+2	| item1		| 2021-02-10
+3	| item3		| 2019-02-19
+--------------------------------------------
+
+Enter a command: You just entered up ["3", "9"]
+Enter a command: You just entered print []
+--------------------------------------------
+		board 1		
+--------------------------------------------
+Index	| Item			| Deadline
+--------------------------------------------
+0	| item3		| 2019-02-19
+1	| item4		| 2020-09-04
+2	| item2		| 2020-02-12
+3	| item1		| 2021-02-10
+--------------------------------------------
+
+Enter a command: You just entered down ["1", "8"]
+Enter a command: You just entered print []
+--------------------------------------------
+		board 1		
+--------------------------------------------
+Index	| Item			| Deadline
+--------------------------------------------
+0	| item3		| 2019-02-19
+1	| item2		| 2020-02-12
+2	| item1		| 2021-02-10
+3	| item4		| 2020-09-04
+--------------------------------------------
+
+Enter a command: You just entered swap ["1", "2"]
+Enter a command: You just entered print []
+--------------------------------------------
+		board 1		
+--------------------------------------------
+Index	| Item			| Deadline
+--------------------------------------------
+0	| item3		| 2019-02-19
+1	| item1		| 2021-02-10
+2	| item2		| 2020-02-12
+3	| item4		| 2020-09-04
+--------------------------------------------
+
+Enter a command: You just entered priority []
+--------------------------------------------
+		PRIORITY		
+--------------------------------------------
+item3 				 2019-02-19
+
+--------------------------------------------
+Enter a command: You just entered print []
+--------------------------------------------
+		board 1		
+--------------------------------------------
+Index	| Item			| Deadline
+--------------------------------------------
+0	| item3		| 2019-02-19
+1	| item1		| 2021-02-10
+2	| item2		| 2020-02-12
+3	| item4		| 2020-09-04
+--------------------------------------------
+
+Enter a command: You just entered sort []
+
+Enter a command: You just entered print []
+--------------------------------------------
+		board 1		
+--------------------------------------------
+Index	| Item			| Deadline
+--------------------------------------------
+0	| item3		| 2019-02-19
+1	| item2		| 2020-02-12
+2	| item4		| 2020-09-04
+3	| item1		| 2021-02-10
+--------------------------------------------
+Enter a command: You just entered quit []
+Enter a command: You just entered quit []

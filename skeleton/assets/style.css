@@ -39,3 +39,41 @@ ul li a {
 input:last-child {
     background-color: gold;
 }
+
+.user_review {
+    background-color: rgb(234, 206, 169);
+    border-radius: 10px;
+    padding: 10px 25px;
+    margin: 10px 25px;
+}
+
+input[type="radio"], input[type="submit"], select {
+    cursor: pointer;
+}
+
+input:last-child:hover {
+    filter: brightness(0.7);
+}
+
+ol > li:nth-child(even) {
+    background-color: lightgray;
+}
+
+h2 + .user_review {
+    border-top: 1px solid black;
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    background-image: url(./stars.png);
+    width: 30px;
+    height: 30px;
+}
+
+input[type="radio"]:hover {
+    background-position: center;
+}
+
+input[type="radio"]:checked {
+    background-position: bottom;
+}
